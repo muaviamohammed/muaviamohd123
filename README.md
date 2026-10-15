@@ -1,58 +1,67 @@
 # Muavia Mohammed
 
-**Founder & CEO, [MIZAN](https://mizan.market)** - the cryptographic verification rail systematic finance was missing.
+**Founder & CEO, [MIZAN](https://mizan.market)**: the proof layer for AI trading agents.
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/muaviamohammed) [![X](https://img.shields.io/badge/X-000000?logo=x&logoColor=white)](https://x.com/mohd_muavia) [![GitHub](https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white)](https://github.com/muaviamohammed) [![Email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:muavia@mizan.market)
 
 ---
 
 ### What I'm building
 
-The world's first cryptographic verification standard for quant strategies. Every honest-backtest check - walk-forward Sharpe, drawdown, lookahead audit, point-in-time data integrity - runs inside a **RISC Zero zkVM** and emits a **219KB STARK receipt** anyone can re-verify in under 10 minutes.
+AI agents are starting to manage money, and none of them can prove their record. Backtests are cheap to fake and easy to overfit, and no builder with a real edge will show their strategy.
 
-**The strategy stays hidden. The proof is public. Math is the only authority.**
+**MIZAN proves an agent's track record without revealing the agent.** Its trades are scored on fixed, public market data, after costs, under a published test (return, drawdown, risk-adjusted performance, out-of-sample results), entirely inside a **RISC Zero zkVM**. The result is a **~220 KB STARK proof** that anyone can verify in milliseconds, offline, for free, without asking us.
+
+**Prove the edge. Never reveal it.**
 
 ```
-Engine status:        LIVE in production
-Lines of Rust:        5,400+ (shipped before raising)
-Proof size:           219 KB STARK (constant)
-Verify time:          12 ms cryptographic / <10 min full audit
-Conditions pinned:    8 / 8 (image ID, receipt, journal,
-                             data root, gate policy, verdict,
-                             strategy concealment, digest)
-First credential:     ISSUED (BTC Trend 4H - Sharpe 1.65)
-Retractions filed:    40+ (root cause on each)
-External backing:     Dr. Anish Mohammed
-                      (ZK cryptographer - ex-CTO Panther Protocol
-                       - reviewed Ethereum's foundational papers)
-                      → reviewed engine, angel-invested
+Engine                 LIVE · era v12 · RISC Zero zkVM · STARK
+Written                18,000+ lines of Rust, solo, before raising
+Markets                668 canonical: crypto, US ETFs, US stocks
+                       every series pinned by a published Merkle root
+Proof                  ~220 KB STARK receipt
+Verify                 milliseconds · free · offline · permissionless
+Verifier               macOS · Linux · Windows (one-bit tamper → refused)
+Anchoring              RFC-3161 timestamp + Bitcoin (OpenTimestamps)
+Public registry        85 credentials · 58 refused · published anyway
+Standard               VTR-1, the open Verifiable Track Record standard
+For agents             MCP server · A2A endpoint · Python SDK
+Self-serve             studio.mizan.market/app (1–8 markets per book)
 ```
 
 ### Why this exists
 
-Bonds have Moody's. Companies have audit. Identity has KYC. But **$23 trillion sits in alternative investments** where the manager grades their own homework - performance numbers come from a backtest the manager built themselves. AI made fabricating one trivial, and spotting a real one impossible.
+Bonds have ratings. Companies have audits. Asset managers have performance standards. AI trading agents have a screenshot.
 
-MIZAN ends that. **Math, not handshake.**
+An agent can't be interviewed. It can test a thousand strategies in an hour and show you the best one. And it will never show its code, because the strategy is the whole business. So capital is stuck choosing between trusting the claim and demanding the code.
+
+**MIZAN is the third choice: proof instead of disclosure.**
 
 ### The discipline
 
-Three years of treating integrity as engineering, not branding. **50+ strategies tested - 3 kept - 40+ publicly retracted** with root cause on every one - including one validated by deploying real capital to confirm a backtest was lying.
+I learned this problem the hard way. I built my own quant research system, and it found backtests with Sharpe ratios above 10. I put real money on one: the backtest said it won almost every trade; live, it lost 7 of its first 8. The "edge" was a bug.
 
-A firm that publishes its own failures is the only firm whose passing credentials mean something.
+So I audited everything I'd built and **retracted 40+ of my own strategies, with the root cause published on each**. Then I built the referee that would have caught them, and pointed it at my own work first.
 
-### Current
+It refused most of it, including one of my own AI agents at **+895%**. That refusal is [public](https://studio.mizan.market/credential/zkml11-verifiable-ai-nvda).
 
-Engine live Engine live - First credential issued - Raising $1.5M seed at $30M pre - [mizan.market](https://mizan.market)
+**A proof system that only shows winners is marketing. Trust comes from what it refuses.**
+
+### Now
+
+🟢 Engine live (era v12) · self-serve minting open · integrations in review with Coinbase AgentKit, GOAT SDK, CrewAI and the Docker MCP registry · raising a seed round
+
+**Next:** live forward tracks, where every decision is committed before the market moves, and agents that mint with no human in the loop.
 
 ---
 
 ### Find me
 
-- [mizan.market](https://mizan.market) - canonical
-- [Deck](https://mizan.market/deck) - [Technical](https://mizan.market/technical) - [One-Pager](https://mizan.market/onepager) - [Press Kit](https://mizan.market/press)
-- [Data Room](https://mizan.market/dataroom) (password: `quantverified`)
-- [LinkedIn](https://www.linkedin.com/in/muaviamohammed)
-- [@mohd_muavia](https://x.com/mohd_muavia)
-- muavia@mizan.market
+- 🌐 [mizan.market](https://mizan.market) · [Verify a credential](https://mizan.market/verify/) · [Registry](https://mizan.market/registry/) · [VTR-1 standard](https://mizan.market/standard/)
+- 🧪 [Prove your agent](https://studio.mizan.market/app/) · [mizan-mcp](https://github.com/muaviamohammed/mizan-mcp) · [mizan-verify](https://github.com/muaviamohammed/mizan-verify)
+- 💼 [Investors](https://mizan.market/investors/) · deck and data room on request
+- ✉️ muavia@mizan.market
 
 ---
 
-<sub>Most quant edge is fake. We prove the few that aren't.</sub>
+<sub>Most backtests are fake. We prove the few that aren't, without ever seeing them.</sub>
